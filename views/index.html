@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='/npm/bootstrap/dist/css/bootstrap.css'></script>
+    <script src='/npm/angular/angular.js'></script>
+    <script src="/npm/angular-ui-router/release/angular-ui-router.js" defer></script>
+    <script src="/npm/angular-messages/angular-messages.js" defer></script>
+    <script src='/client/javascript/app.js'></script>
+    <script src='/client/javascript/employee/employee.controller.js'></script>
+    <script src='/client/javascript/employee/employee.states.js'></script>
+    <script src='/client/javascript/employee/employee.factory.js'></script>
+    <script src='/client/javascript/product/product.controller.js'></script>
+    <script src='/client/javascript/product/product.states.js'></script>
+    <script src='/client/javascript/product/product.factory.js'></script>
+    <script src='/client/javascript/filter/filter.directive.js'></script>
+
+    <title>Northwind Filter</title>
+  </head>
+
+  <body ng-app="nwindFilter">
+    <ul class="nav nav-pills">
+      <li><a ui-sref="product">Products</a></li>
+      <li><a ui-sref="employee">Employees</a></li>
+    </ul>
+
+    <div class="container-fluid">
+      <h1>NWind Filter</h1>
+      <ui-view></ui-view>
+    </div>    
+  </body>
+</html>

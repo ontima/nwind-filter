@@ -1,0 +1,23 @@
+{
+  "name": "nwind-filter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "seed": "node db/run_seed.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-messages": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "bluebird": "^3.3.4",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12",
+    "path": "^0.12.7"
+  }
+}
