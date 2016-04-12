@@ -2,7 +2,6 @@ app.config(function ($stateProvider) {
 	$stateProvider.state('product', {
 		url: '/products/:char',
 		templateUrl: '/client/javascript/product/product.html',
-		//template: '<h2>hello</h2>',
 		controller: 'ProductCtrl',
 		resolve: {
 			filteredProducts: function (Product, $stateParams) {
