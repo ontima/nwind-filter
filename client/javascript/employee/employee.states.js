@@ -5,7 +5,6 @@ app.config(function ($stateProvider) {
 		controller: 'EmployeeCtrl',
 		resolve: {
 			filteredEmployees: function (Employee, $stateParams) {
-				console.log("char: ", $stateParams.char);
 				if (!$stateParams.char)
 					return;
 				return Employee.getByChar($stateParams.char);

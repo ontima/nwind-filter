@@ -1,4 +1,3 @@
-
 app.directive('filter', function(){
 
 	return {

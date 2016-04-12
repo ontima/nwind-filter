@@ -5,7 +5,6 @@ app.config(function ($stateProvider) {
 		controller: 'ProductCtrl',
 		resolve: {
 			filteredProducts: function (Product, $stateParams) {
-				console.log("char: ", $stateParams.char);
 				if (!$stateParams.char)
 					return;
 				return Product.getByChar($stateParams.char);
