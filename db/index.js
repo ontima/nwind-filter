@@ -29,6 +29,7 @@ module.exports = {
     if(_connection)
       return _connection;
     _connection =  new Promise(function(resolve, reject){
+      //use a connection string so you can deploy
       mongoose.connect('mongodb://localhost/nwind-filter', function(err){
           if(err)
             return reject(err);

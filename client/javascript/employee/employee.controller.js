@@ -7,6 +7,6 @@ app.controller('EmployeeCtrl', function($scope, allEmployees, filteredEmployees)
 		if (firstLetters.indexOf(letter) === -1){
 			firstLetters.push(letter);
 		}
-	})
+	});
 	$scope.firstLetters = firstLetters;
-})
+});

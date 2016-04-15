@@ -1,3 +1,4 @@
+//why not call this state products?
 app.config(function ($stateProvider) {
 	$stateProvider.state('product', {
 		url: '/products/:char',
@@ -5,6 +6,7 @@ app.config(function ($stateProvider) {
 		controller: 'ProductCtrl',
 		resolve: {
 			filteredProducts: function (Product, $stateParams) {
+        //is char optional?
 				if (!$stateParams.char)
 					return;
 				return Product.getByChar($stateParams.char);
